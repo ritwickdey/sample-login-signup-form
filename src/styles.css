@@ -11,3 +11,82 @@
 html {
   font-size: 62.5%
 }
+
+body {
+  overflow-x: hidden;
+  background-color: #17a598;
+  font-family: Helvetica, sans-serif;
+}
+
+.form-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 45rem;
+  padding: 5rem 4rem;
+  background-color: #ff7b37;
+  color: #fff;
+  font-size: 1.6rem;
+  box-shadow: 9px 13px 7px 0px rgba(0, 0, 0, 0.4);
+  border: 1px solid transparent;
+  border-radius: 1.6rem;
+}
+
+.form>h4 {
+  font-size: 3.2rem;
+  margin-bottom: 0.6rem;
+  align-self: center;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.control>label {
+  color: #eee;
+}
+
+.control>input {
+  margin-top: 0.8rem;
+  padding: 0.8rem;
+  padding-left: 0;
+  border: none;
+  border-bottom: 1.5px solid hsla(20, 100%, 91%, 1);
+  background-color: #ff7b37;
+  color: #fff;
+  font-size: 1.8rem;
+  width: 100%;
+  outline: 0;
+  /* font-family: Helvetica, sans-serif */
+}
+
+input:-webkit-autofill {
+  border: none;
+  -webkit-text-fill-color: #fff;
+  border-bottom: 1.5px solid hsla(20, 100%, 91%, 1);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media(max-width:490px) {
+  .form {
+    min-width: 85%;
+    padding: 2rem;
+  }
+  .form>h4 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
+}
