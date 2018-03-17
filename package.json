@@ -1,12 +1,12 @@
 {
-  "name": "signin-signup",
+  "name": "sample-login-signup-form",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "build:gh": "ng build --prod --bh login-signup",
+    "build:gh": "ng build --prod --bh /sample-login-signup-form",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
