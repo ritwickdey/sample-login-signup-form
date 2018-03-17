@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { UserComponent } from './user/user.component';
 import { AuthGuard } from './auth.guard';
+import { SocialLinksComponent } from './social-links/social-links.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AuthGuard } from './auth.guard';
     AppComponent,
     LoginComponent,
     SignupComponent,
-    UserComponent
+    UserComponent,
+    SocialLinksComponent
   ],
   imports: [
     BrowserModule,
