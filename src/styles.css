@@ -70,7 +70,7 @@ body {
 }
 
 .control input {
-  margin-top: 0.8rem;
+  /* margin-top: 0.8rem; */
   padding: 0.8rem;
   padding-left: 0;
   border: none;
@@ -82,6 +82,18 @@ body {
   outline: 0;
   transition: all 0.2s ease-in-out;
   /* font-family: Helvetica, sans-serif */
+}
+
+.control input.ng-invalid.ng-touched {
+  border-bottom: 1.5px solid #ff0000;
+}
+
+.control .form-error {
+  color: #e53935;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  padding: 0.8rem;
+  background-color: #ffcdd2;
 }
 
 .control input:focus {
