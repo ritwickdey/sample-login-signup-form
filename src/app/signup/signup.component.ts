@@ -12,4 +12,8 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
   }
 
+  onFormSubmit(data) {
+    console.log(data);
+  }
+
 }

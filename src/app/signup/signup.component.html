@@ -1,6 +1,6 @@
 <div class="signup-form-container">
   <div class="form-container">
-    <form autocomplete="false" class="form">
+    <form #signupForm="ngForm" (ngSubmit)="onFormSubmit(signupForm.value)" autocomplete="false" class="form">
       <h4 class="form-header">Sign up
         <i class="fa fa-sign-in" aria-hidden="true"></i>
       </h4>
@@ -53,7 +53,7 @@
         </div>
       </div>
       <div class="control">
-        <button class="btn" type="submit">Signup</button>
+        <button [disabled]="signupForm.invalid" class="btn" type="submit">Signup</button>
         <p class="alter-way">
           <a [routerLink]="'/login'">Already have an account?</a>
         </p>

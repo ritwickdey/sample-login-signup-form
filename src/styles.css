@@ -18,6 +18,10 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+button:disabled {
+  cursor: not-allowed !important;
+}
+
 .form-container {
   height: 100%;
   width: 100%;
@@ -119,14 +123,20 @@ body {
   cursor: pointer;
 }
 
-.control>.btn:hover {
+.control>.btn:not([disabled]):hover {
   transform: translateY(-0.3rem);
   box-shadow: 6px 10px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
-.control>.btn:active {
+.control>.btn:not([disabled]):active {
   transform: translateY(0.5rem);
   box-shadow: 6px 8px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+.control>.btn:disabled {
+  background-color: rgba(255, 126, 61, 0.7);
+  color: rgba(255, 255, 255, 0.5);
+  transform: none;
 }
 
 .control>.alter-way {

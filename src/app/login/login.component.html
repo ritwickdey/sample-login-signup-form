@@ -1,6 +1,6 @@
 <div class="login-form-container">
   <div class="form-container">
-    <form autocomplete="false" class="form">
+    <form #loginForm="ngForm" (ngSubmit)="onFormSubmit(loginForm.value)" autocomplete="false" class="form">
       <h4 class="form-header">
         Login
         <i class="fa fa-user-circle-o" aria-hidden="true"></i>
@@ -13,7 +13,7 @@
             Email is required
           </div>
           <div *ngIf="emailField.errors.email && !emailField.errors.required">
-            Invalid email address 
+            Invalid email address
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="control">
-        <button class="btn" type="submit">Login</button>
+        <button [disabled]="loginForm.invalid" class="btn" type="submit">Login</button>
         <p class="alter-way">
           <a [routerLink]="'/signup'">Create a new account</a>
         </p>
