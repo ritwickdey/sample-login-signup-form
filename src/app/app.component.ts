@@ -31,7 +31,9 @@ import { trigger, transition, style, group, query, animate } from '@angular/anim
 export class AppComponent {
 
   triggerAnimation(outlet) {
+    console.log(outlet.isActivated, outlet.activatedRoute.component.name);
     if (outlet.isActivated)
       return outlet.activatedRoute.component.name;
+
   }
 }
