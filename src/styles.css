@@ -43,7 +43,11 @@ body {
   border-radius: 1.6rem;
 }
 
-.form>h4 {
+.form>.form-header {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+  align-items: center;
   font-size: 3.2rem;
   margin-bottom: 0.6rem;
   align-self: center;
@@ -94,6 +98,7 @@ body {
   transition: all 0.3s ease-in-out;
   margin-top: -1rem;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 
 .control>.btn:hover {
@@ -122,18 +127,28 @@ body {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+.fa {
+  vertical-align: bottom;
+}
+
 @media(max-width:490px) {
   .form {
     min-width: 85%;
     padding: 2rem;
     padding-bottom: 0;
   }
-  .form>h4 {
+  .form>.form-header {
     font-size: 2.6rem;
     margin-top: 0;
     margin-bottom: 1rem;
   }
+  .control {
+    margin: 1rem 0;
+  }
   .control>.btn {
     margin-top: -0.5rem;
+  }
+  .alter-way {
+    padding-bottom: 0.8rem;
   }
 }
