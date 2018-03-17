@@ -3,7 +3,7 @@
 A sample Login/Signup form made with angular 5.
 
 ## Link: 
-_soon..._
+-  https://ritwickdey.gitlab.io/login-signup
 
 
 ## Features
@@ -11,4 +11,4 @@ _soon..._
 - Angular Animation
 - Form Validation
 - No CSS library used
-- Travis CI to deploy
+- CI/CD to deploy
