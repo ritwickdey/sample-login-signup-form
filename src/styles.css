@@ -22,6 +22,14 @@ button:disabled {
   cursor: not-allowed !important;
 }
 
+.hr {
+  width: 100%;
+  height: 4px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0.6rem 0;
+}
+
 .form-container {
   height: 100%;
   width: 100%;
@@ -156,6 +164,37 @@ button:disabled {
   -webkit-text-fill-color: #fff;
   border-bottom: 1.5px solid hsla(20, 100%, 91%, 1);
   transition: background-color 5000s ease-in-out 0s;
+}
+
+.social-links-container {
+  width: 100%;
+  margin: 1rem;
+  margin-top: -1rem
+}
+
+.social-links-container .tag {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.social-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  height: 30px;
+  width: 30px;
+  margin: 0 1.5rem;
+  background-color: #fff;
+} 
+
+.social-link > img {
+  height: 100%;
+  width: 100%;
 }
 
 .fa {
