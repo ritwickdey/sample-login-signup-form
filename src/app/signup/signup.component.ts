@@ -15,7 +15,6 @@ export class SignupComponent implements OnInit {
 
   onFormSubmit(data) {
     console.log(data);
-    localStorage.setItem('email', data.email);
     this.router.navigateByUrl('/');
   }
 
