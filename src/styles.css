@@ -106,6 +106,15 @@ body {
   box-shadow: 6px 8px 7px 0px rgba(0, 0, 0, 0.4);
 }
 
+.control>.alter-way {
+  text-align: center
+}
+
+.control>.alter-way>a {
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
 .control input:-webkit-autofill {
   border: none;
   -webkit-text-fill-color: #fff;
