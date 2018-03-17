@@ -6,19 +6,51 @@
       </h4>
       <div class="control">
         <label for="name">Name</label>
-        <input required id="name" type="text">
+        <input ngModel #name="ngModel" minlength="3" name="name" required id="name" type="text">
+        <div class="form-error" *ngIf="name.touched && !name.valid">
+          <div *ngIf="name.errors.required">
+            Name is required
+          </div>
+          <div *ngIf="name.errors.minlength">
+            Name must be at least 3 characters long.
+          </div>
+        </div>
       </div>
       <div class="control">
         <label for="phone">Phone</label>
-        <input required id="phone" type="text">
+        <input ngModel #phone="ngModel" pattern="[0-9]{10}" name="phone" required id="phone" type="text">
+        <div class="form-error" *ngIf="phone.touched && !phone.valid">
+          <div *ngIf="phone.errors.required">
+            Phone is required
+          </div>
+          <div *ngIf="phone.errors.pattern">
+            Phone number must be 10 digit.
+          </div>
+        </div>
       </div>
       <div class="control">
         <label for="email">Email</label>
-        <input required id="email" type="text">
+        <input ngModel #email="ngModel" email="true" name="email" required id="email" type="text">
+        <div class="form-error" *ngIf="email.touched && !email.valid">
+          <div *ngIf="email.errors.required">
+            Email is required
+          </div>
+          <div *ngIf="email.errors.email && !email.errors.required">
+            Invalid Email address.
+          </div>
+        </div>
       </div>
       <div class="control">
         <label for="password">Password</label>
-        <input required autocomplete="new-password" id="password" type="password">
+        <input ngModel #password="ngModel" minlength="4" name="password" required autocomplete="new-password" id="password" type="password">
+        <div class="form-error" *ngIf="password.touched && !password.valid">
+          <div *ngIf="password.errors.required">
+            Password is required
+          </div>
+          <div *ngIf="password.errors.minlength">
+            Password must be at least 4 characters long.
+          </div>
+        </div>
       </div>
       <div class="control">
         <button class="btn" type="submit">Signup</button>

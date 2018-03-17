@@ -41,6 +41,7 @@ body {
   box-shadow: 9px 13px 7px 0px rgba(0, 0, 0, 0.4);
   border: 1px solid transparent;
   border-radius: 1.6rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .form>.form-header {
@@ -93,6 +94,7 @@ body {
   font-size: 1.4rem;
   border-radius: 2px;
   padding: 0.8rem;
+  margin-bottom: -2rem;
   background-color: #ffcdd2;
 }
 
@@ -153,6 +155,12 @@ body {
     padding: 2rem;
     padding-bottom: 0;
   }
+  .form input {
+    padding: 0.4rem;
+  }
+  .form .form-error {
+    margin-bottom: -0.5rem;
+  }
   .form>.form-header {
     font-size: 2.6rem;
     margin-top: 0;
@@ -166,5 +174,8 @@ body {
   }
   .alter-way {
     padding-bottom: 0.8rem;
+  }
+  .form-header .fa {
+    display: none;
   }
 }
