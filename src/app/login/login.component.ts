@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, state, animate, transition, style } from '@angular/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +8,14 @@ import { trigger, state, animate, transition, style } from '@angular/animations'
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   onFormSubmit(data) {
     console.log(data);
+    this.router.navigateByUrl('/user');
   }
 
 }
