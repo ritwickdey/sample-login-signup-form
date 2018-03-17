@@ -26,8 +26,8 @@ import { SocialLinksComponent } from './social-links/social-links.component';
     BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: '', redirectTo: '/login', pathMatch: 'full' },
-      { path: 'login', component: LoginComponent },
-      { path: 'signup', component: SignupComponent },
+      { path: 'login', component: LoginComponent, data: { animation: 'login' } },
+      { path: 'signup', component: SignupComponent, data: { animation: 'signup' } },
       { path: 'user', component: UserComponent, canActivate: [AuthGuard] },
       { path: '**', redirectTo: '/login' }
     ], {
