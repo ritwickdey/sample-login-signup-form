@@ -1,0 +1,72 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Basic login & Signup with Angular</title><base href="/sample-login-signup-form/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link href="styles.d11cec80cb203a0f325b.bundle.css" rel="stylesheet"/></head><body><app-root><!-- 
+      This loader is my own pen (at CodePen) 
+      https://codepen.io/ritwickdey/pen/WMdpyE
+     --><style>*,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        overflow: hidden;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+      }
+
+      .loader-container {
+        height: 12em;
+        width: 12em;
+        position: relative;
+        display: block;
+      }
+
+      .cicle-loader {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        border: 0.8em solid rgba(0, 0, 0, .3);
+        border-radius: 50%;
+
+        animation: rotating 1.5s 1s infinite both;
+      }
+
+      .cicle-loader::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: -0.8em;
+        left: -0.8em;
+        display: inline-block;
+        border: 0.8em solid transparent;
+        border-top-color: #2980b9;
+        border-radius: 50%;
+        box-sizing: content-box;
+
+        animation: rotating 1.5s infinite both;
+      }
+
+      @keyframes rotating {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }</style><div class="container"><div class="loader-container"><div class="cicle-loader"></div></div></div></app-root><script type="text/javascript" src="inline.7dab630e2bd20f25648c.bundle.js"></script><script type="text/javascript" src="polyfills.f20484b2fa4642e0dca8.bundle.js"></script><script type="text/javascript" src="main.8d79b4e9a8c53b66ebbc.bundle.js"></script></body></html>
